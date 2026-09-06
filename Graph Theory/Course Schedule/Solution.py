@@ -19,4 +19,4 @@ class Solution:
                 degrees[neighbour] -= 1
                 if degrees[neighbour] == 0: degreeZeroNodes.append(neighbour)
         
-        return all(degrees[i] == 0 for i in range(numCourses))
+        return all(degree == 0 for degree in degrees)
